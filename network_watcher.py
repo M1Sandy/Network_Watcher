@@ -17,7 +17,8 @@ def main():
 		curr_down = new_curr_down
 		curr_up = new_curr_up
 		time.sleep(1)
-	
+def toKB(val):
+	return val/1000
 def printing(download,uplaod):
-	print("Downdload: " + str(download) + "Bytes\tUpload: " + str(uplaod) + "Bytes \r", end="")
+	print("Downdload: " + str(toMegabyte(download)) + "KB\tUpload: " + str(toMegabyte(uplaod)) + "KB \r", end="")
 main()
